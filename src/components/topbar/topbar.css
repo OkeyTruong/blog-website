@@ -17,7 +17,7 @@
     justify-content: center;
 }
 .topIcon{
-    font-size: 2rem;
+    font-size: 3rem;
     margin-right: 1rem;
     color:var(--cl-primary-1);
     cursor: pointer;
@@ -32,8 +32,8 @@
 .topListItem{
     margin-right: 2rem;
     text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
     cursor: pointer;
 }
 .topListItem:hover{
