@@ -1,3 +1,9 @@
+:root{
+  --cl-primary:#fff;
+  --cl-primary-1:#444;
+  --cl-primary-2:#808080;
+  --cl-primary-3:#666;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +13,7 @@ html,
 body {
   height: 100%;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 a {
   text-decoration: none;
