@@ -3,6 +3,11 @@
   --cl-primary-1:#444;
   --cl-primary-2:#808080;
   --cl-primary-3:#666;
+  --cl-primary-4:#fdfbfb;
+  --cl-primary-5:#a7a4a4;
+  --cl-primary-6:#222222;
+  --cl-primary-7:#be9656;
+  --cl-primary-8:#999;
 }
 * {
   margin: 0;
@@ -12,7 +17,6 @@
 html,
 body {
   height: 100%;
-  font-family: "Josefin Sans", sans-serif;
   font-size: 62.5%; /* 1rem = 10px */
 }
 a {

@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <div className="sidebarTitle">about me</div>
         <img
-          src="https://media3.giphy.com/media/12q7JyfK1UolW0/giphy.gif"
+          src="https://cdn.fbsbx.com/v/t59.2708-21/272077049_674429680240312_8159522262390176962_n.gif?_nc_cat=111&fallback=1&ccb=1-5&_nc_sid=041f46&_nc_ohc=ZZLwiuRXe8cAX_GDsdy&_nc_oc=AQn3TsOv7kLqpg4SPCbmW7lnSrSuOQbaJeOoILx-MahpI11sUK5C2smzQMQHNDfyJuqWrD-nZbXa68NgSZhXxA0L&_nc_ht=cdn.fbsbx.com&oh=03_AVI2BSB9B4ajFfk7Gr9v9KI1tBfsvlCsjFG4tsPSZy4MgA&oe=61EB4CC7"
           alt=""
         />
         <p>

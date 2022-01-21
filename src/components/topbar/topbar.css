@@ -1,14 +1,18 @@
-
 .top{
-    width: 100%;
-    height: 50px;
-    background: var(--cl-primary);
+    /* position */
     position: sticky;
+    /* font */
+    font-family: "Josefin Sans", sans-serif;
     top: 0;
+    /* display */
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 50px;
+    /* color */
+    background: var(--cl-primary);
+    /* other */
     z-index: 999;
-    font-family: "Josefin Sans", sans-serif;
 }
 .topLeft, .topRight{
     flex: 3;
@@ -17,8 +21,8 @@
     justify-content: center;
 }
 .topIcon{
-    font-size: 3rem;
     margin-right: 1rem;
+    font-size: 3rem;
     color:var(--cl-primary-1);
     cursor: pointer;
 }
@@ -40,11 +44,13 @@
     color:var(--cl-primary-2)
 }
 .topImg{
+    /* display */
+    margin-right: 1.5rem;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    /* other */
     object-fit: cover;
-    margin-right: 1.5rem;
     cursor: pointer;
 }
 .topSearchIcon{
