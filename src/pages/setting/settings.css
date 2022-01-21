@@ -1,0 +1,122 @@
+.settings {
+  display: flex;
+}
+
+.settingsWrapper {
+  flex: 9;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsTitleUpdate {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: var(--cl-primary-12);
+}
+
+.settingsTitleDelete {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: red;
+  cursor: pointer;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.settingsPP > img {
+  height: 20%;
+  width: 20%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.settingsPPIcon {
+  /* display */
+  display: flex;
+  margin-left: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  /* color */
+  color: var(--cl-primary-6);
+  background-color: var(--cl-primary-12);
+  /* font */
+  font-size: 2rem;
+  /* other */
+  cursor: pointer;
+}
+
+.settingsPPButton:focus {
+  outline-style: none;
+}
+
+.settingsForm > label {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.settingsPPInput {
+  width: 30%;
+}
+
+.settingsForm > input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid var(--cl-primary-2);
+  /* font */
+  font-size: 1.5rem;
+  /* color */
+  color: var(--cl-primary-2);
+  /* other */
+  outline: none;
+}
+
+.settingsSubmitButton {
+  display: flex;
+  margin-top: 20px;
+  padding: 1rem;
+  width: 15rem;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  /* color */
+  color: var(--cl-primary);
+  background-color: var(--cl-primary-9);
+  /* font */
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  /* other */
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.settingsSubmitButton:hover {
+  opacity: 1;
+}
