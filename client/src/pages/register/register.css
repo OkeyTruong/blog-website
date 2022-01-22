@@ -1,0 +1,82 @@
+.register {
+  font-family: "Dongle", sans-serif;
+  /* display */
+  display: flex;
+  height: calc(100vh - 50px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* bg */
+  background: url("https://i1.wp.com/halcyonrealms.com/blogpics/japgifB.gif?resize=500%2C291");
+  background-size: cover;
+}
+.registerTitle {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px #ff0000;
+  color: var(--cl-primary-10);
+}
+.registerForm {
+  /* display */
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  width: 300px;
+  flex-direction: column;
+  box-shadow: 0 20px 50px rgba(247, 71, 48, 0.7);
+  /* color */
+  background: var(--cl-primary);
+  border-radius: 15px;
+}
+.registerForm > label {
+  margin: 10px 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.registerInput {
+  /* display */
+  padding: 1rem;
+
+  border: none;
+  border-bottom: 1px solid var(--cl-primary-12);
+  /* color */
+  color: var(--cl-primary-7);
+  background: var(--cl-primary);
+  /* font */
+  font-size: 2rem;
+  /* other */
+  outline: none;
+}
+.registerButton {
+  /* display */
+  margin-top: 20px;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  background: var(--cl-primary-9);
+  color: var(--cl-primary);
+  /* font */
+  text-transform: uppercase;
+  font-size: 2rem;
+  /* other */
+  cursor: pointer;
+}
+.registerLoginButton{
+  /* position */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  /* display */
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  /* color */
+  background: var(--cl-primary-12);
+  color: var(--cl-primary);
+  /* font */
+  text-transform: uppercase;
+  font-size: 2rem;
+  /* other */
+  cursor: pointer;
+}
