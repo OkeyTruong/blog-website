@@ -22,7 +22,7 @@
   display: flex;
   margin-top: 20px;
   padding: 20px;
-  width: 30%;
+  width: 300px;
   flex-direction: column;
   box-shadow: 0 20px 50px rgba(247, 71, 48, 0.7);
   /* color */
