@@ -24,7 +24,7 @@ export default function Settings() {
           <label htmlFor="">username</label>
           <input type="text" placeholder="Okey" />
           <label htmlFor="">email</label>
-          <input type="email" placeholder="okey222k@gmail.com" />
+          <input type="email" placeholder="okeyk@gmail.com" />
           <label htmlFor="">password</label>
           <input type="password" />
           <button className="settingsSubmitButton">update</button>
