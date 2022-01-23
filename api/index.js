@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const authRouter = require("./routes/auth");
 const userRouter = require("./routes/users");
+const postRouter = require("./routes/posts");
 
 const app = express();
 
@@ -21,6 +22,7 @@ mongoose
 
 app.use("/api/auth",authRouter)
 app.use("/api/users",userRouter)
+app.use("/api/posts",postRouter)
  
 app.listen("5000", () => {
   console.log("server is running.");
