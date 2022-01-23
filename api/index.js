@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const authRouter = require("./routes/auth");
 const userRouter = require("./routes/users");
 const postRouter = require("./routes/posts");
+const categoryRouter = require("./routes/categories")
 
 const app = express();
 
@@ -23,6 +24,7 @@ mongoose
 app.use("/api/auth",authRouter)
 app.use("/api/users",userRouter)
 app.use("/api/posts",postRouter)
+app.use("/api/categories",categoryRouter)
  
 app.listen("5000", () => {
   console.log("server is running.");
