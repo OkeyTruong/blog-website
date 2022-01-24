@@ -49,6 +49,10 @@
 .singlePostAuthor {
   margin-left: 5px;
 }
+.singlePostAuthor b {
+  text-transform: capitalize;
+  margin-left: 5px;
+}
 
 .singlePostDesc {
   color: var(--cl-primary-6);
