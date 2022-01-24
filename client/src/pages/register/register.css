@@ -18,6 +18,8 @@
   color: var(--cl-primary-10);
 }
 .registerForm {
+  /* position */
+  position: relative;
   /* display */
   display: flex;
   margin-top: 20px;
@@ -62,7 +64,7 @@
   /* other */
   cursor: pointer;
 }
-.registerLoginButton{
+.registerLoginButton {
   /* position */
   position: absolute;
   top: 60px;
@@ -79,4 +81,14 @@
   font-size: 2rem;
   /* other */
   cursor: pointer;
+}
+.alertError {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 2px 2px #ee1212;
+  color:var(--cl-primary-10);
+  transform: translate(-50%, -50%);
 }
