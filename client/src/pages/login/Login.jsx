@@ -1,20 +1,57 @@
-import { Link } from "react-router-dom"
-import "./login.css"
+import { useContext, useRef } from "react";
+import { Link } from "react-router-dom";
+import { Context } from "../../Context/Context" 
+import axios from "axios";
+import "./login.css";
 
 export default function Login() {
-    return(
-        <div className="login">
-            <span className="loginTitle">login</span>
-            <form action="" className="loginForm">
-                <label >email</label>
-                <input type="email" className="loginInput" placeholder="Enter your email..."/>
-                <label >password</label>
-                <input type="password" className="loginInput" placeholder="Enter your password..."/>
-            <button className="loginButton">login</button>
-            </form>
-            <button className="loginRegisterButton">
-                <Link className="link" to='/register'>register</Link>
-            </button>
-        </div>
-    )
+  const userRef = useRef();
+  const passwordRef = useRef();
+  const {user,dispatch, isFechthing } = useContext(Context)
+
+  const handleSubmit =  async (e) => {
+    e.preventDefault();
+    dispatch({
+        type:"LOGIN_START"
+    })
+    try {
+        const res = await axios.post("/auth/login", {
+            username: userRef.current.value,
+            password: passwordRef.current.value,
+          });
+        //   console.log(res);
+          dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+    } catch (error) {
+        console.log(error);
+        dispatch({ type: "LOGIN_FAILURE" });
+    }
+  };
+  console.log(user);
+  return (
+    <div className="login">
+      <span className="loginTitle">login</span>
+      <form className="loginForm" onSubmit={handleSubmit}>
+        <label>Username</label>
+        <input
+          type="text"
+          className="loginInput"
+          placeholder="Enter your username..."
+          ref={userRef}
+        />
+        <label>Password</label>
+        <input
+          type="password"
+          className="loginInput"
+          placeholder="Enter your password..."
+          ref={passwordRef}
+        />
+        <button className="loginButton" type="submit">
+          Login
+        </button>
+      </form>
+      <button className="loginRegisterButton">
+        <Link className="link" to='/register'>register</Link>
+      </button>
+    </div>
+  )
 }
