@@ -4,8 +4,12 @@ import { Context } from "../../Context/Context";
 import "./topbar.css"
 
 export default function Topbar() {
-    const {user} = useContext(Context);
+    const {user, dispatch} = useContext(Context);
 
+    const handleLogout = ()=>{
+        dispatch({type:"LOGOUT"})
+    }
+    console.log(user);
     return (
         <div className="top">
             <div className="topLeft">
@@ -31,10 +35,10 @@ export default function Topbar() {
                         <>
                         <img
                           className="topImg"
-                          src="https://i.gifer.com/838d.gif"
+                          src={user.profilePic}
                           alt=""
                         />
-                        <li className="topList topListItem">
+                        <li className="topList topListItem" onClick={handleLogout}>
                             {user && "LOGOUT"}
                         </li>
                         </>
