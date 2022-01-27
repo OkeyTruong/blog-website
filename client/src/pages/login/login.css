@@ -62,6 +62,10 @@
   /* other */
   cursor: pointer;
 }
+.loginButton:disabled{
+  cursor: not-allowed;
+  background: var(--cl-primary-9);
+}
 .loginRegisterButton {
   /* position */
   position: absolute;
