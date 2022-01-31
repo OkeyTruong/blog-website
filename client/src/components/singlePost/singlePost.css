@@ -4,6 +4,8 @@
 .singlePostWrapper {
   padding: 2rem;
   padding-right: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .singlePostImg {
@@ -18,8 +20,24 @@
   margin: 10px;
   font-size: 2.8rem;
   font-family: "Lora", sans-serif;
+  color: var(--cl-primary-7);
 }
-
+.singlePostTitleInput{
+  /* display */
+  margin: 15px 10px;
+  padding-bottom: 5px;
+  border:none;
+  border-bottom: 1px solid var(--cl-primary-7);;
+  /* font */
+  font-size: 2.8rem;
+  font-family: "Lora", sans-serif;
+  /* color */
+  color: var(--cl-primary-7);
+  text-align: center;
+}
+.singlePostTitleInput:focus{
+  outline:none;
+}
 .singlePostEdit {
   float: right;
   font-size: 1.6rem;
@@ -55,15 +73,39 @@
 }
 
 .singlePostDesc {
-  color: var(--cl-primary-6);
+  line-height: 3.5rem;
   font-family: "Varela Round", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
-  line-height: 3.5rem;
+  text-transform: capitalize;
   text-align: justify;
+  color: var(--cl-primary-7);
 }
 
 .singlePostDesc::first-letter {
   margin-left: 20px;
   font-size: 3rem;
   font-weight: 600;
+}
+.singlePostDescInput{
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  color: var(--cl-primary-7);
+  text-align: justify;
+  text-transform: capitalize;
+  border:none;
+}
+.singlePostDescInput:focus{
+  outline:none
+}
+.singlePostButton{
+  
+   border:none;
+   background-color:var(--cl-primary-9);
+   padding:5px;
+   color: var(--cl-primary);
+   border-radius: 5px;
+   cursor:pointer;
+   margin-top: 20px;
+   text-transform: capitalize;
 }

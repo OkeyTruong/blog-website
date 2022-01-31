@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
+import { Context } from "../../Context/Context";
 
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
@@ -12,14 +13,19 @@ export default function Sidebar() {
     };
     getCats();
   }, []);
+  const { user } = useContext(Context)
+  console.log(user);
+
   return (
     <div className="sidebar">
       <div className="sidebarItem">
         <div className="sidebarTitle">about me</div>
-        <img
-          src="https://i.imgur.com/Wx64fF7.gif"
+        {user &&(
+          <img
+          src={user.profilePic}
           alt=""
         />
+        )}
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Reprehenderit eum veritatis ducimus molestiae dolor unde. Ut minus
