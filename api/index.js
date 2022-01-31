@@ -7,12 +7,14 @@ const userRouter = require("./routes/users");
 const postRouter = require("./routes/posts");
 const categoryRouter = require("./routes/categories")
 const multer = require("multer")
+const path = require("path")
 
 const app = express();
 
 
 dotenv.config();
 app.use(express.json())
+app.use("/images",express.static(path.join(__dirname,"/images")))
 
 mongoose
   .connect(process.env.MONGO_URL, {
