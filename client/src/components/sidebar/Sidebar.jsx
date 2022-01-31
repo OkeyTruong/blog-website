@@ -6,6 +6,8 @@ import { Context } from "../../Context/Context";
 
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
+  const PF = "http://localhost:5000/images/"
+
   useEffect(() => {
     const getCats = async () => {
       const res = await axios.get("/categories");
@@ -14,7 +16,7 @@ export default function Sidebar() {
     getCats();
   }, []);
   const { user } = useContext(Context)
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="sidebar">
@@ -22,7 +24,7 @@ export default function Sidebar() {
         <div className="sidebarTitle">about me</div>
         {user &&(
           <img
-          src={user.profilePic}
+          src={PF+user.profilePic}
           alt=""
         />
         )}
